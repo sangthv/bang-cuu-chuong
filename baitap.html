@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>sinh bảng cửu chương</h2>
+<p id="demo"></p>
+<script>
+    let multiplicationTable = "<table border='1' >"
+    for( i=1; i<=9; i++){
+        multiplicationTable +="<tr>";
+        for(  j=2; j<=9; j++){
+            multiplicationTable +=  "<td>" +j+"x"+i+"="+ i*j +  "</td>";
+        }
+        multiplicationTable +="</tr>";
+    }
+    multiplicationTable += "</table>";
+    document.getElementById("demo").innerHTML=multiplicationTable;
+</script>
+
+
+</body>
+</html>
